@@ -2,7 +2,7 @@ import ganache from 'ganache';
 
 const server = ganache.server();
 const PORT = +(process.env.PORT || 8545);
-server.listen(PORT, '127.0.0.1', async err => {
+server.listen(PORT, async err => {
   if (err) throw err;
 
   console.log(`Ganache listening on port ${server.address().port}...`);
